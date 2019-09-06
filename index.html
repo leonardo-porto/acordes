@@ -8,6 +8,19 @@
     <title>Dicionário de Acordes</title>
 
     <style>
+
+        #botao {
+
+            height: 50px;
+            width: 200px;
+            background-color: orangered;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 25px;
+            border-radius: 10px;
+
+
+
+        }
         body {
 
             text-align: center;
@@ -40,6 +53,7 @@
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 30px;
         }
+
     </style>
 </head>
 
@@ -48,14 +62,14 @@
     <h1>Dicionário de Acordes</h1>
 
     <input id="cifra" type="text"><br>
-    <input type="button" value="Procurar Acorde" onclick="buscar ()"><br>
+    <input id = "botao" type="button" value="Procurar Acorde" onclick="buscar ()"><br>
     <audio id = "audio" src=""></audio>
 
     <img id="acorde" src="img/acorde.png" alt="">
     
 
 
-</body>
+</body onload = "buscar ()">
 <script>
 
     function buscar() {
@@ -75,31 +89,43 @@
 
 
             acorde.src = "img/d.png"
+            audio.src = "audio/d.wav"
+            audio.play ()
 
         } else if (cifra == "E" || cifra == "e") {
 
 
             acorde.src = "img/e.png"
+            audio.src = "audio/e.wav"
+            audio.play ()
 
         } else if (cifra == "F" || cifra == "f") {
 
 
             acorde.src = "img/f.png"
+            audio.src = "audio/f.wav"
+            audio.play ()
 
         } else if (cifra == "G" || cifra == "g") {
 
 
             acorde.src = "img/g.png"
+            audio.src = "audio/g.wav"
+            audio.play ()
 
         } else if (cifra == "A" || cifra == "a") {
 
 
             acorde.src = "img/a.png"
+            audio.src = "audio/a.wav"
+            audio.play ()
 
         } else if (cifra == "B" || cifra == "b") {
 
 
             acorde.src = "img/b.png"
+            audio.src = "audio/b.wav"
+            audio.play ()
 
         }
 
