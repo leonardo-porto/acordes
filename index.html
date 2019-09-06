@@ -25,6 +25,15 @@
 
         }
 
+        audio {
+
+            position: absolute;
+
+            top: 250px;
+            left: 500px;
+
+        }
+
         #cifra {
 
             border-radius: 10px;
@@ -40,8 +49,10 @@
 
     <input id="cifra" type="text"><br>
     <input type="button" value="Procurar Acorde" onclick="buscar ()"><br>
+    <audio id = "audio" src=""></audio>
 
     <img id="acorde" src="img/acorde.png" alt="">
+    
 
 
 </body>
@@ -51,11 +62,14 @@
 
         var cifra = document.getElementById("cifra").value
         var acorde = document.getElementById("acorde")
+        var audio = document.getElementById ("audio")
 
         if (cifra == "C" || cifra == "c") {
 
 
             acorde.src = "img/c.png"
+            audio.src = "audio/c.wav"
+            audio.play ()
 
         } else if (cifra == "D" || cifra == "d") {
 
