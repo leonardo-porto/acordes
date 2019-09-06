@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dicionário de Acordes</title>
+
+    <style>
+        body {
+
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+            box-shadow: 5px;
+        }
+
+        #acorde {
+
+            width: 30%;
+            height: 30%;
+            position: relative;
+            top: -10px;
+
+        }
+
+        #cifra {
+
+            border-radius: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Dicionário de Acordes</h1>
+
+    <input id="cifra" type="text"><br>
+    <input type="button" value="Procurar Acorde" onclick="buscar ()"><br>
+
+    <img id="acorde" src="img/acorde.png" alt="">
+
+
+</body>
+<script>
+
+    function buscar() {
+
+        var cifra = document.getElementById("cifra").value
+        var acorde = document.getElementById("acorde")
+
+        if (cifra == "C" || cifra == "c") {
+
+
+            acorde.src = "img/c.png"
+
+        } else if (cifra == "D" || cifra == "d") {
+
+
+            acorde.src = "img/d.png"
+
+        } else if (cifra == "E" || cifra == "e") {
+
+
+            acorde.src = "img/e.png"
+
+        } else if (cifra == "F" || cifra == "f") {
+
+
+            acorde.src = "img/f.png"
+
+        } else if (cifra == "G" || cifra == "g") {
+
+
+            acorde.src = "img/g.png"
+
+        } else if (cifra == "A" || cifra == "a") {
+
+
+            acorde.src = "img/a.png"
+
+        } else if (cifra == "B" || cifra == "b") {
+
+
+            acorde.src = "img/b.png"
+
+        }
+
+
+    }
+
+
+</script>
+
+</html>
