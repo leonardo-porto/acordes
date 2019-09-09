@@ -8,7 +8,6 @@
     <title>Dicionário de Acordes</title>
 
     <style>
-
         #botao {
 
             height: 50px;
@@ -17,10 +16,12 @@
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-size: 25px;
             border-radius: 10px;
+            box-shadow: 5px 5px 5px;
 
 
 
         }
+
         body {
 
             text-align: center;
@@ -31,10 +32,11 @@
 
         #acorde {
 
-            width: 30%;
-            height: 30%;
+            width: 20%;
+            height: 20%;
             position: relative;
             top: -10px;
+
 
         }
 
@@ -53,7 +55,6 @@
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 30px;
         }
-
     </style>
 </head>
 
@@ -62,11 +63,11 @@
     <h1>Dicionário de Acordes</h1>
 
     <input id="cifra" type="text"><br>
-    <input id = "botao" type="button" value="Procurar Acorde" onclick="buscar ()"><br>
-    <audio id = "audio" src=""></audio>
+    <input id="botao" type="button" value="Procurar Acorde" onclick="buscar ()"><br><br>
+    <audio id="audio" src=""></audio>
 
     <img id="acorde" src="img/acorde.png" alt="">
-    
+
 
 
 </body>
@@ -76,56 +77,105 @@
 
         var cifra = document.getElementById("cifra").value
         var acorde = document.getElementById("acorde")
-        var audio = document.getElementById ("audio")
+        var audio = document.getElementById("audio")
 
         if (cifra == "C" || cifra == "c") {
 
 
             acorde.src = "img/c.png"
             audio.src = "audio/c.wav"
-            audio.play ()
+            audio.play()
 
         } else if (cifra == "D" || cifra == "d") {
 
 
             acorde.src = "img/d.png"
             audio.src = "audio/d.wav"
-            audio.play ()
+            audio.play()
 
         } else if (cifra == "E" || cifra == "e") {
 
 
             acorde.src = "img/e.png"
             audio.src = "audio/e.wav"
-            audio.play ()
+            audio.play()
 
         } else if (cifra == "F" || cifra == "f") {
 
 
             acorde.src = "img/f.png"
             audio.src = "audio/f.wav"
-            audio.play ()
+            audio.play()
 
         } else if (cifra == "G" || cifra == "g") {
 
 
             acorde.src = "img/g.png"
             audio.src = "audio/g.wav"
-            audio.play ()
+            audio.play()
 
         } else if (cifra == "A" || cifra == "a") {
 
 
             acorde.src = "img/a.png"
             audio.src = "audio/a.wav"
-            audio.play ()
+            audio.play()
 
         } else if (cifra == "B" || cifra == "b") {
 
 
             acorde.src = "img/b.png"
             audio.src = "audio/b.wav"
-            audio.play ()
+            audio.play()
+
+        } else if (cifra == "cm" || cifra == "Cm") {
+
+
+            acorde.src = "img/cm.png"
+            audio.src = "audio/.wav"
+            audio.play()
+
+        } else if (cifra == "dm" || cifra == "Dm") {
+
+
+            acorde.src = "img/dm.png"
+            audio.src = "audio/.wav"
+            audio.play()
+
+        } else if (cifra == "em" || cifra == "Em") {
+
+
+            acorde.src = "img/em.png"
+            audio.src = "audio/.wav"
+            audio.play()
+
+        } else if (cifra == "fm" || cifra == "Fm") {
+
+
+            acorde.src = "img/fm.png"
+            audio.src = "audio/.wav"
+            audio.play()
+
+        } else if (cifra == "gm" || cifra == "Gm") {
+
+
+            acorde.src = "img/gm.png"
+            audio.src = "audio/.wav"
+            audio.play()
+
+        } else if (cifra == "bm" || cifra == "Bm") {
+
+
+            acorde.src = "img/bm.png"
+            audio.src = "audio/.wav"
+            audio.play()
+
+        } else if (cifra == "am" || cifra == "Am") {
+
+
+            acorde.src = "img/am.png"
+            audio.src = "audio/.wav"
+            audio.play()
 
         }
 
